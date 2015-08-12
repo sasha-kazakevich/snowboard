@@ -1,9 +1,521 @@
-body {
-	margin: 0;
-	padding: 0;
+body{
+	width: 100%;
+	font: 100%/1.5em "Proxima Nova";
 }
-img {
+header{
+	width: 100%;
+	background-color: black;
+	overflow: hidden;
+}
+header .logo{
+	padding: 14px;
+	margin-left: 8%;
+	float: left;
+}
+header .logo-menu {
+	display: none;
+}
+header nav{
+	width: 60%;
+	float: left;
+}
+header nav ul{
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+header nav ul li{
+	font-size: 0.8em;
+	display: inline-block;
+	padding: 10px 10px;
+	margin: 0 3px;
+}
+header nav ul li:hover{
+	border-bottom: 1px solid #fff;
+	transition: all .4s;
+}
+header nav ul li a{
+	color: #fff;
+	cursor: pointer;
+}
+header .header-icon{
+	color: #fff;
+	float: right;
+	margin-top: 30px;
+	margin-right: 50px;
+	cursor: pointer;
+}
+header .header-icon span{
 	display: block;
+	float: right;
+	margin-top: 7px;
+	cursor: default;
+}
+ header .button-up{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	background: url(../image/button_up.png);
+	background-size: 100%;
+	z-index: 100;
+	right: 1%;
+	bottom: 5%;
+	display: none;
+	cursor: pointer;
+}
+header .comming {
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: 0.6;
+	z-index: 4;
+}
+.slider{
+	max-width: 100%;
+	position: relative;
+}
+.slider img{
+	width: 100%;
+	display: block;
+	position: relative;
+}
+.slider .text{
+	top: 29%;
+	left: 20%;
+	position: absolute;
+}
+.slider .text p{
+	color: #fff;
+	padding: 30px;
+	font-size: 5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.slider .text .button{
+	margin-top: 30px;
+	background-color: #000;
+	width: 150px;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+}
+.slider .text .button:hover {
+	background-color: #3e3939;
+}
+.slider .text .button p{
+	padding: 10px;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.slider .slider-det {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.9);
+	left: 0;
+	top: 0;
+	z-index: 300;
+	display: none;
+}
+.slider .slider-det .product {
+	margin: 1% auto;
+	width: 50%;
+	height: 96%;
+	background : url(../image/coming-soon.jpg) no-repeat;
+	background-size: 100%;
+}
+.slider .slider-det .product p {
+	font-size: 27px;
+	float: right;
+	margin: 0 3%;
+	cursor: pointer;
+}
+.snowboard{
+	padding: 8% 0;
+}
+.snowboard .textsnow{
+	text-align: center;
+}
+.snowboard .textsnow h2{
+	text-transform: uppercase;
+	font-size: 2.7em;
+}
+.snowboard .textsnow h5{
+	margin-top: 2%;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.snowboard .textsnow img{
+	margin-top: 1%;
+}
+.snowboard #snowboards {
+	background: #fff;
+}
+.clearout {
+	height: 50px;
+	clear: both;
+}
+.nbs-flexisel-container {
+    position: relative;
+    max-width: 99%;
+    margin: 0 auto;
+}
+.nbs-flexisel-ul {
+    position: relative;
+    width: 9999px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;   
+    text-align: center;  
+}
+.nbs-flexisel-inner {
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+.nbs-flexisel-item {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    position: relative;
+    line-height: 0px;
+}
+.nbs-flexisel-item img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 149px;
+    max-height: 645px;
+}
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 180px;
+    height: 240px; 
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 1;
+}
+.nbs-flexisel-nav-right {
+	width: 135px;
+}
+.nbs-flexisel-nav-left {
+    left: 30px;
+    background: url(../image/button-previous.png) no-repeat;
+}
+.nbs-flexisel-nav-right {
+    right: 30px;
+    background: url(../image/button-next.png) no-repeat;
+}
+.snowboard p{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 3%;
+}
+
+.company{
+	width: 100%;
+	position: relative;
+}
+.company img {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+.company .text{
+	position: absolute;
 	width: 45%;
+	top: 15%;
+	left: 15%;
+}
+.company .text .mountains{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2.7em;
+	font-weight: bold;
+	line-height: 1.2;
+}
+.company p{
+	color: #fff;
+	font-size: 0.9em;
+	padding: 20px 0;
+}
+.features{
+	text-align: center;
+	padding: 8% 0;
+}
+.features .textfeat {
+	text-align: center;
+}
+.features .textfeat h2{
+	text-transform: uppercase;
+	font-size: 2.7em;
+}
+.features .textfeat img{
+	margin-top: 1%;
+}
+.features .images{
+	width: 73%;
 	margin: 0 auto;
+	padding-bottom: 20%;
+}
+.features .image-block{
+	width: 23%;
+	float: left;
+	padding: 4% 1% 0 1%;
+}
+.features .image-block img{
+	width: 100%;
+}
+.features p{
+	font-weight: bold;
+	text-align: left;
+	font-size: 0.9em;
+}
+/* CSS GRID */
+.row:after {
+	display: block;
+	content: '.';
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+[class*="span"] {
+	float: left;
+	display: inline;
+}
+.span1 {width: 19%;}
+.span2 {width: 50%;}
+.span3 {width: 75%;}
+.span4 {width: 100%;}
+
+
+footer{
+	background-color: #000;
+}
+footer ul{
+	color: #fff;
+}
+footer ul b{
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 5%;
+}
+footer ul li {
+	color: #c9c9c9;
+	cursor: pointer;
+}
+footer .footer-menu {
+	overflow: hidden;
+	padding-top: 60px;
+}
+footer .footer-menu .products{
+	margin-left: 15%;
+}
+footer .footer-menu ul li b {
+	color: #fff;
+}
+footer p{
+	width: 300px;
+	margin-left: 15%;
+	color: #fff;
+}
+footer .news {
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 200px;
+	padding: 0;
+	margin: 0;
+}
+footer .form {
+	margin-top: 20px;
+}
+footer .form input {
+	padding: 6px;
+}
+footer .form button {
+	margin-left: -6px;
+	padding: 8px 10px;
+	border: none;
+}
+footer .form button {
+	color: #000;
+	font-weight: bold;
+}
+footer  .new .social {
+	margin-top: 40px;
+}
+footer  .new .social a {
+	color: #fff;
+	margin: 5px 9px;
+}
+footer  .new .social a:hover {
+	color: #817d7d;
+}
+footer p {
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 1050px){
+	.company .text .lastp {
+		display: none;
+	}
+	footer .customer {
+		display: none;
+	}
+	.span1 {width: 24%;}
+}
+@media screen and (max-width: 960px){
+	.slider .text{
+		top: 18%;
+		left: 18%;
+	}
+	.slider .text p{
+		font-size: 4em;
+	}
+	header .logo-menu {
+		display: block;
+		margin-top: 15px;
+		margin-left: 20px;
+		cursor: pointer;
+		width: 60px;
+	}
+	header nav {
+		width: 20%;
+	}
+	header .menu {
+		background: #000;
+		position: absolute;
+		z-index: 100;
+		margin-top: 10px;
+		display: none;
+	}
+	header .menu li{
+		display: block;
+	}
+	header .menu li:hover {
+		border-bottom: none;
+		text-decoration: underline;
+	}
+	.snowboard .textsnow h2 {
+		font-size: 2.3em;
+	}
+	.snowboard .textsnow h5{
+		font-size: 0.8em;
+	}
+	.snowboard .textsnow img {
+		width: 40px;
+	}
+	.company .text .mountains {
+		font-size: 2.2em;
+	}
+	.company p{
+		font-size: 0.9em;
+		padding: 16px 0;
+	}
+	.features .textfeat h2{
+		font-size: 2.3em;
+	}
+	.features .textfeat img{
+		width: 40px;
+	}
+	.features p{
+		font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 850px){
+	.features .image-block {
+		width: 48%;
+	}
+	.features {
+		overflow: hidden;
+	}
+	footer .about {
+		display: none;
+	}
+	.span1 {width: 35%;}
+}
+@media screen and (max-width: 730px){
+	.slider .text{
+		top: 14%;
+		left: 12%;
+	}
+	.slider .text p{
+		font-size: 3.5em;
+		padding: 20px;
+	}
+	.slider .text .button{
+		margin-top: 10px;
+	}
+	.slider img,
+	.company img {
+		min-height: 350px;
+	}
+	.company .text .mountains {
+		font-size: 1.8em;
+	}
+	.company .text{
+		width: 55%;
+		top: 10%;
+		left: 10%;
+	}
+	.company p{
+		font-size: 0.9em;
+		padding: 10px 0;
+	}
+}
+@media screen and (max-width: 640px){
+	.company .text{
+		width: 75%;
+	}
+}
+@media screen and (max-width: 575px){
+	.slider .text{
+		top: 12%;
+		left: 5%;
+	}
+	.slider .text p{
+		font-size: 2.5em;
+		padding: 15px;
+	}
+	.company p span {
+		display: none;
+	}
+	.features .image-block {
+		width: 90%;
+		margin: 0 auto;
+	}
+	footer .products {
+		display: none;
+	}
+	footer .new{
+		margin-left: 30%;
+	}
+	.span1 {width: 90%;}
+}
+@media screen and (max-width: 375px){
+	header .header-icon .shop,
+	header .header-icon span {
+		display: none;
+	}
+	header .header-icon{
+		margin-right: 10px;
+	}
+	.slider .text{
+		left: 0;
+	}
+	.company .text .mountains {
+		font-size: 1.4em;
+	}
+	footer .new{
+		margin-left: 10%;
+	}
+	footer p {
+		margin-left: 0;
+	}
 }

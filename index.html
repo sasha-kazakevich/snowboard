@@ -2,10 +2,142 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>snowboard</title>
-	<link rel="stylesheet" href="css/main.css">
+	<title>SnowBoarding</title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-	<img src="img/coming-soon.jpg">
+	<header class="header" id="header">
+		<div class="logo">
+			<img src="image/logo.png" width="77" height="62" alt="logo">
+		</div>
+		<nav>
+			<img id="logo-menu" class="logo-menu" src="image/menu.png" width="60" alt="menu">
+			<ul class="menu" id="menu">
+				<li><a href="#team">team</a></li>
+				<li><a href="#shop">shop</a></li>
+				<li><a href="#exper">experience</a></li>
+				<li><a href="#features">features</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-icon">
+			<img src="image/header-icon2.png" alt="icon">
+			<img class="shop" src="image/header-icon1.png" alt="icon">
+			<span>€0</span>
+		</div>
+		<div class="button-up" id="button-up"></div>
+	</header>
+
+	<div class="slider" id="team">
+		<img id="slider" src="image/slider1.png" alt="slider">
+		<div class="text">
+			<p>Run Over </p><p>Everything</p>
+			<div id="details" class="button"><p>See Details</p></div>
+		</div>
+		<div  id="slider-det" class="slider-det">
+			<div class="product">
+				<p class="exit" id="exit">X</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="snowboard" id="shop">
+		<div class="textsnow">
+			<h2>snowboards</h2>
+			<h5>Aliquam erat volutpat. Curabitur ut consequat arcu eget laoreet est</h5>
+			<img src="image/x.png" alt="x">
+		</div>
+		<ul id="snowboards"> 
+    		<li><img src="image/1.png" alt="snowboard"></li>
+    		<li><img src="image/2.png" alt="snowboard"></li>    
+    		<li><img src="image/3.png" alt="snowboard"></li>     
+    		<li><img src="image/4.png" alt="snowboard"></li> 
+    		<li><img src="image/5.png" alt="snowboard"></li>                                                          
+		</ul>
+		<p>Snowboard extreme Series</p>
+	</div>
+
+	<div class="company" id="exper">
+		<img src="image/company.png" alt="company">
+		<div class="text">
+			<p class="mountains">The Mountains <br/> Snowboarding</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt auctor facilisis. Nam massa dui, imperdiet et mi ut, sagittis viverra odio.<span> Duis et lectus eu enim gravida vulputate nec eget nisi. Nunc ultrices velit blandit, dapibus lacus in, feugiat erat. Donec non porttitor augue, sit amet lacinia purus. Nulla fringilla quam est, luctus dapibus odio suscipit ut. Vivamus et lectus a nunc fringilla volutpat. Morbi sed congue sem.</span></p>
+
+			<p class="lastp">Aliquam erat volutpat. Curabitur ut consequat arcu, eget laoreet est. Vivamus semper nibh sit amet libero hendrerit luctus. Fusce non bibendum lorem. Fusce laoreet risus eget tortor lobortis egestas. Etiam tempus quam sed felis viverra scelerisque. Integer fringilla libero risus, vel euismod turpis auctor ac. Proin elementum aliquet libero a dapibus. Mauris et tempor dolor.</p>
+		</div>
+	</div>
+	
+	<div class="features" id="features">
+		<div class="textfeat">
+			<h2>Features</h2>
+			<img src="image/x.png" alt="x">
+		</div>
+		<div class="images">
+			<div class="image-block">
+				<a href="image/th1.jpg" data-lightbox="snow" data-title=""><img src="image/image1.jpg" alt="img"></a>
+				<p>Born Identity: Bringing Burton<br/> Hardgoods to Life</p>
+			</div>
+			<div class="image-block">
+				<a href="image/th2.jpg" data-lightbox="snow2" data-title=""><img src="image/image2.jpg" alt="img"></a>
+				<p>Jeremy Jones: On That Street<br/> Grind</p>
+			</div>
+			<div class="image-block">
+				<a href="image/th3.jpg" data-lightbox="snow3" data-title=""><img src="image/image3.jpg" alt="img"></a>
+				<p>Burton’s Tokyo Rail Days <br/> Recap</p>
+			</div>
+			<div class="image-block">
+				<a href="image/th4.jpg" data-lightbox="snow4" data-title=""><img src="image/image4.jpg" alt="img"></a>
+				<p>Burton’s Tokyo Rail Days <br/> Preview</p>
+			</div>
+		</div>
+	</div>
+	<footer class="footer" id="contact">
+		<div class="footer-menu">
+			<ul class="products span1">
+				<li><b>Products</b></li>
+				<li>Mens</li>
+				<li>Womens</li>
+				<li>Youth</li>
+			</ul>
+			<ul class="about span1">
+				<li><b>About</b></li>
+				<li>Careers and Internships</li>
+				<li>Sponsorships</li>
+				<li>Team</li>
+				<li>Catalog Request/Download</li>
+			</ul>
+			<ul class="customer span1">
+				<li><b>Customer Support</b></li>
+				<li>Contact Us</li>
+				<li>Shipping and Order Tracking</li>
+				<li>Easy Returns</li>
+				<li>Warranty</li>
+				<li>Replacement Binding Parts</li>
+			</ul>
+			<div class="new span1">
+				<p class="news">Newsletter</p>
+				<div class="form">
+					<input type="text" size="15" placeholder="Enter your email">
+					<button>GO</button>
+				</div>
+				<div class="social">
+					<a href="https://facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+					<a href="https://twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
+					<a href="https://instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+					<a href="https://pinterest.com"><i class="fa fa-pinterest-p fa-lg"></i></a>
+					<a href="https://youtube.com"><i class="fa fa-youtube fa-lg"></i></a>
+				</div>
+			</div>
+		</div>
+			<p>© 2015 Mountains Snowboards</p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/jquery.flexisel.js"></script>
+	<script src="js/script.js" ></script>
+	<script src="js/lightbox.min.js"></script>
 </body>
 </html>
